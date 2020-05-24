@@ -1,7 +1,11 @@
 from Summoner import Summoner
 from Monster import Monster
-class Team:
+import json
+import random
+import math
 
+
+class Team:
     def __init__(self,summoner,monsters,ruleset,sm_dict,player):
         self.player = player
         self.summoner = Summoner(summoner["level"],sm_dict[summoner["id"]],ruleset)
@@ -27,3 +31,6 @@ class Team:
 
     def set_blinded(self, blinded):
         self.blinded = blinded
+
+
+

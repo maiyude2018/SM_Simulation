@@ -26,3 +26,4 @@ class Summoner:
         if ruleset == "Unprotected":
             self.team_mod[3] = 0
             self.enemy_mod[3] = 0
+
