@@ -35,7 +35,7 @@ monsters2 = [{'id': 50, 'level': 5},{'id': 131, 'level': 1}]
 
 
 
-sm_dict=simulation.load_SM_dict()
+sm_dict=Simulation.load_SM_dict()
 
 
 
