@@ -56,8 +56,18 @@ class Monster:
             abilities = stats["abilities"][0:level]
             mon_abilities = []
             for ability in abilities:
+                if "addBlast" in ruleset:
+                    if ability == "Blast":
+                        continue
+                if "addVoid" in ruleset:
+                    if ability == "Void":
+                        continue
+                if "addAffliction" in ruleset:
+                    if ability == "addAffliction":
+                        continue
+
                 if "Heavy Hitters" in ruleset:
-                    if ability == "Knock Out ":
+                    if ability == "Knock Out":
                         continue
                 if "Healed Out" in ruleset:
                     if ability == "Heal":
@@ -88,9 +98,17 @@ class Monster:
                 mon_abilities.append("Knock Out")
             if "Target Practice" in ruleset and (self.type == "magic" or self.type == "ranged"):
                 mon_abilities += "Snipe"
+            #召唤士技能
+            if "addVoid" in ruleset :
+                mon_abilities.append("Void")
+            if "addAffliction" in ruleset :
+                mon_abilities.append("Affliction")
+            if "addBlast" in ruleset :
+                mon_abilities.append("Blast")
 
 
             self.abilities = mon_abilities
+            #print(self.abilities)
 
 
         self.can_resurrect = "Resurrect" in self.abilities

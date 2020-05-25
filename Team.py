@@ -9,6 +9,8 @@ class Team:
     def __init__(self,summoner,monsters,ruleset,sm_dict,player):
         self.player = player
         self.summoner = Summoner(summoner["level"],sm_dict[summoner["id"]],ruleset)
+        ruleset=self.summoner.summoner_ability()
+
         self.monsters = []
         self.blinded = False
         self.ruleset = ruleset
