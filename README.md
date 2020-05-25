@@ -2,7 +2,7 @@
 Simulation for the Battle Mode of the Steem Dapp Steem Monsters/Splinterlands
 
 
-
+```
 from Team import Team
 from Simulation import SteemMonstersSimulation
 import Simulation
@@ -10,11 +10,10 @@ import Simulation
 
 
 
-
-noinactive=""
 #规则
-ai="Heavy Hitters"
+noinactive=""
 
+ai="Heavy Hitters"
 player="maiyude"
 player2="robot"
 
@@ -56,6 +55,7 @@ if re==1:
     print("team1胜利")
 else:
     print("team2胜利")
+```
 
 
 
