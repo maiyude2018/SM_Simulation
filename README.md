@@ -48,8 +48,7 @@ team2x = Team(summoner2, monsters2, ai, sm_dict, "diren")
 battle = SteemMonstersSimulation(team1x, team2x, sm_dict, player)
 results = battle.simulate_battle（）
 
-re=copy.deepcopy(results[0])
-re1=copy.deepcopy(results[1])
+re=results[0]
 
 if re==1:
     print("team1胜利")
