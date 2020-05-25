@@ -22,7 +22,7 @@ player2="robot"
 
 
 #team1队伍
-# 召唤士信息
+#召唤士信息
 summoner = {'id': 235, 'level': 2}
 monsters = [{'id': 82, 'level': 4},{'id': 48, 'level': 5},{'id': 143, 'level': 6}]
 
@@ -30,7 +30,7 @@ monsters = [{'id': 82, 'level': 4},{'id': 48, 'level': 5},{'id': 143, 'level': 6
 
 
 #team2队伍
-# 召唤士信息
+#召唤士信息
 summoner2 = {'id': 74, 'level': 2}
 monsters2 = [{'id': 50, 'level': 5},{'id': 131, 'level': 1}]
 
